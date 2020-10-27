@@ -9,23 +9,39 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Testimonials Grid</title>
   </head>
   <body>
     <header>
-      <h1>Frontend Mentor Testimonials Grid Challenge</h1>
+      <div class="intro">
+        <h1>
+          Frontend Mentor Testimonials <br />
+          Grid Challenge
+        </h1>
+        <p>
+          Made with<span role="image" aria-label="Heart Emoji"> 💝</span>by
+          <a
+            href="https://github.com/sleepyArpan"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Arpan Chattopadhyay</a
+          >
+        </p>
+      </div>
     </header>
     <main class="container">
       <div class="card card--big card--purple">
         <div class="card__header">
-          <div class="card__header__image">
+          <div class="card__header__image card__header__image--big">
             <img
               src="/images/image-daniel.jpg"
               alt="Picture of Daniel Clifford"
             />
           </div>
           <div class="card__header__creds">
-            Daniel Clifford Verified Graduate
+            <p>Daniel Clifford</p>
+            <p class="card__header__creds--opaque">Verified Graduate</p>
           </div>
         </div>
 
@@ -49,14 +65,15 @@
 
       <div class="card card--small card--grey">
         <div class="card__header">
-          <div class="card__header__image">
+          <div class="card__header__image card__header__image--small">
             <img
               src="/images/image-jonathan.jpg"
               alt="Picture of Jonathan Walter"
             />
           </div>
           <div class="card__header__creds">
-            Jonathan Walters Verified Graduate
+            <p>Jonathan Walters</p>
+            <p class="card__header__creds--opaque">Verified Graduate</p>
           </div>
         </div>
         <div class="card__content">
@@ -80,7 +97,8 @@
             />
           </div>
           <div class="card__header__creds">
-            Jeanette Harmon Verified Graduate
+            <p>Jeanette Harmon</p>
+            <p class="card__header__creds--opaque">Verified Graduate</p>
           </div>
         </div>
         <div class="card__content">
@@ -96,14 +114,15 @@
 
       <div class="card card--big card--black">
         <div class="card__header">
-          <div class="card__header__image">
+          <div class="card__header__image card__header__image--big">
             <img
               src="/images/image-patrick.jpg"
               alt="Picture of Patrickk Abrams"
             />
           </div>
           <div class="card__header__creds">
-            Patrick Abrams Verified Graduate
+            <p>Patrick Abrams</p>
+            <p class="card__header__creds--opaque">Verified Graduate</p>
           </div>
         </div>
         <div class="card__content">
@@ -128,7 +147,10 @@
           <div class="card__header__image">
             <img src="/images/image-kira.jpg" alt="Picture of Kira Whittle" />
           </div>
-          <div class="card__header__creds">Kira Whittle Verified Graduate</div>
+          <div class="card__header__creds">
+            <p>Kira Whittle</p>
+            <p class="card__header__creds--opaque">Verified Graduate</p>
+          </div>
         </div>
         <div class="card__content">
           <div class="card__content__primary">
@@ -151,12 +173,5 @@
         </div>
       </div>
     </main>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
   </body>
 </html>
